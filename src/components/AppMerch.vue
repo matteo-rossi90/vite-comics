@@ -43,12 +43,11 @@
 @use '../styles/partials/mixins' as *;
 
 #merch{
-    background-color: #0282F9;
+    background-color: $merch;
     height: 150px;
     padding: 20px;
     display: flex;
     align-items: center;
-    // @include flexbox();
 
     ul{
         list-style-type: none;

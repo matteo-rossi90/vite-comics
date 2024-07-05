@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue';
+import AppMerch from './components/AppMerch.vue';
 import AppFooter from './components/AppFooter.vue';
 
 
@@ -9,6 +10,7 @@ export default{
     components: {
       AppHeader,//componente dell'header
       AppMain, //componente del main
+      AppMerch,
       AppFooter //componente del footer
     }
 }
@@ -18,6 +20,7 @@ export default{
 <template>
   <AppHeader/>
   <AppMain/>
+  <AppMerch/>
   <AppFooter/>
 </template>
 

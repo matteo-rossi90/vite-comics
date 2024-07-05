@@ -1,4 +1,4 @@
-@mixin enter ($type: 'both'){
+@mixin flexbox ($type: 'both'){
 
     display: flex;
 
@@ -12,7 +12,7 @@
     }
 
     @else if $type =='both' {
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 }

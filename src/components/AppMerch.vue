@@ -34,7 +34,7 @@
 <template>
 
     <section id="merch">
-        <div class="container-content">
+        <div class="container">
             <nav>
                 <ul>
                     <li v-for="(merch, index) in merchItems" :key="index">
@@ -55,31 +55,32 @@
 
 #merch{
     background-color: $merch;
-    height: 150px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
+    // height: 150px;
+    padding: 30px;
 
-    ul{
-        list-style-type: none;
-        @include flexbox();
+        ul{
+            list-style-type: none;
+            @include flexbox();
+            gap: 30px;
+            padding: 10px;
+            
+            li {
+                @include flexbox();
+                gap: 10px;
 
-        li {
-            width: 50px;
-            gap: 10px;
-            @include flexbox(); 
-
-            img{
-                max-width: 80%;
-            }
-
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 13px;
+                img{
+                    height: 40px;
+                    width: 40px; 
+                    object-fit: contain;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                }
             }
         }
-    }
+    
 }
 
 </style>

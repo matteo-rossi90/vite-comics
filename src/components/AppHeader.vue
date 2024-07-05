@@ -1,6 +1,49 @@
 <script>
     export default{
-        name: 'AppHeader'
+        name: 'AppHeader',
+        data(){
+            return{
+
+                menuItems: [
+                    {
+                        text: "CHARACTERS",
+                        current: false
+                    },
+                    {
+                        text: "COMICS",
+                        current: true
+                    },
+                    {
+                        text: "MOVIES",
+                        current: false
+                    },
+                    {
+                        text: "TV",
+                        current: false
+                    },
+                    {
+                        text: "GAMES",
+                        current: false
+                    },
+                    {
+                        text: "VIDEOS",
+                        current: false
+                    },
+                    {
+                        text: "FANS",
+                        current: false
+                    },
+                    {
+                        text: "NEWS",
+                        current: false
+                    },
+                    {
+                        text: "SHOP",
+                        current: false
+                    }
+                ]
+            }
+        }
     }
 </script>
 
@@ -15,35 +58,8 @@
         <!-- navigazione -->
         <nav>
             <ul>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
-                </li>
-                <li>
-                    <a href="#">Item</a>
+                <li v-for="(item, index) in menuItems" :key="index">
+                    <a href="#" :class="{active: item.current}">{{ item.text }}</a>
                 </li>
                 
             </ul>
@@ -58,6 +74,7 @@
 
 header{
 
+    height: 100px;
     padding: 10px;
     @include flexbox();
 
@@ -73,6 +90,13 @@ header{
         li a{
             font-weight: 600;
             text-decoration: none;
+            padding: 38px 0;
+            font-size: 12px;
+        }
+
+        .active{
+            border-bottom: 4px solid $merch;
+            color: $merch
         }
     }
 

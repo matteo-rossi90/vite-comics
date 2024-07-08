@@ -35,6 +35,8 @@
 
     <section id="merch">
         <div class="container">
+
+            <!-- icone con menu per i prodotti -->
             <nav>
                 <ul>
                     <li v-for="(merch, index) in merchItems" :key="index">

@@ -49,13 +49,15 @@
 
 <template>
     <header class="container">
+
+        <!-- logo -->
         <div id="box-image">
             <a href="#">
                 <img src="../assets/dc-logo.png" alt="">
             </a>
         </div>
 
-        <!-- navigazione -->
+        <!-- inserimento dinamico in DOM del menu di navigazione -->
         <nav>
             <ul>
                 <li v-for="(item, index) in menuItems" :key="index">

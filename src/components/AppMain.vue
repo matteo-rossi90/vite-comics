@@ -8,8 +8,9 @@
 
     <section class="section-color">
 
+        <!-- contenitore del jumbotron e delle cards -->
         <div id="content" class="container">
-            <h2>content</h2>
+            <h3>CURRENT SERIES</h3>
         </div>
 
     </section>
@@ -24,7 +25,7 @@
     padding: 10px;
     height: 100px;
 
-    h2{
+    h3{
         color: white;
         line-height: 70px
     }

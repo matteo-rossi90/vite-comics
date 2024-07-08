@@ -139,6 +139,7 @@
 
 <template>
     
+    <!-- sezione della parte superiore del footer -->
     <section>
 
         <div class="background">
@@ -147,11 +148,14 @@
 
                 <div id="flex-wrap">
                     
+                    <!-- colonna che riguarda i menu DC Comics e Shop -->
                     <div class="col">
 
                         <nav class="navigation">
         
                             <h3>DC Comics</h3>
+
+                            <!-- inserimento dinamico del menu DC Comics -->
                             <ul>
                                 <li v-for="(list, index) in comicsItems" :key="index">
                                     <a :href="list.url">{{ list.text }}</a>
@@ -161,6 +165,8 @@
                         </nav>
                         <nav class="navigation">
                             <h3>SHOP</h3>
+
+                            <!-- inserimento dinamico del menu Shop -->
                             <ul>
                                 <li v-for="(shop, index) in shopItems" :key="index">
                                     <a :href="shop.url">{{ shop.text }}</a>
@@ -169,9 +175,12 @@
                         </nav>
                     </div>
 
+                    <!-- colonna che riguarda il menu DC -->
                     <div class="col">
                         <nav class="navigation">
                             <h3>DC</h3>
+
+                            <!-- inserimento dinamico del menu DC -->
                             <ul>
                                 <li v-for="(dc, index) in dcItems" :key="index">
                                     <a :href="dc.url">{{ dc.text }}</a>
@@ -181,9 +190,12 @@
                         </nav>
                     </div>
 
+                    <!-- colonna che riguarda il menu Sites -->
                     <div class="col">
                         <nav class="navigation">
                             <h3>SITES</h3>
+
+                            <!-- inserimento dinamico del menu Sites -->
                             <ul>
                                 <li v-for="(site, index) in siteItems" :key="index">
                                     <a :href="site.url">{{ site.text }}</a>
@@ -201,16 +213,20 @@
 
     </section>
 
+    <!-- sezione della parte inferiore del footer -->
     <section id="bottom-bar">
         <div class="container" id="flex-container">
-            
+
+            <!-- pulsante per l'iscrizione -->
             <a href="#" id="btn-sign">
                 <span>SIGN-UP NOW!</span>
             </a>
 
-
+            <!-- Area social -->
             <div id="list-icon">
                 <h3 id="title">FOLLOW US</h3>
+
+                <!-- inserimento dinamico in DOM dei social -->
                 <nav>
                     <ul>
                         <li v-for="(social, index) in socialItems" :key="index">

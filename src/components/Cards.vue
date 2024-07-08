@@ -14,6 +14,8 @@
     <div class="card-items">
         <img :src="details.thumb" alt="">
         <h3>{{ details.series }}</h3>
+        <h4>{{ details.price }}</h4>
+        <h4>{{ details.type }}</h4>
     </div>
 
 
@@ -35,11 +37,19 @@
         object-position: top;
     }
 
-    h3{
+    img:hover{
+        opacity: 0.6;
+    }
+
+    h3,
+    h4{
         color: white;
         margin: 5px 0;
-        font-weight:lighter;
         font-size: 15px;
+    }
+
+    h4{
+        font-weight:lighter;
     }
 }
 

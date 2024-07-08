@@ -107,8 +107,16 @@ import Cards from '../components/Cards.vue';
                 <Cards v-for="(items, i) in listComics" :key="i"
                 :details="items"/> 
             </div>
+
+            <!-- pulsante load more -->
+             <div id="btn-load">
+                <button class="box-blue">
+                    <span>LOAD MORE</span>
+                </button>
+             </div>
             
         </div>
+
 
     </section>
 
@@ -129,6 +137,7 @@ import Cards from '../components/Cards.vue';
 #content{
 
     padding: 10px 0;
+    margin-top: -25px;
 
     h3{
         color: white;
@@ -138,7 +147,7 @@ import Cards from '../components/Cards.vue';
 
     .box-blue{
         background-color: $merch;
-        width: 15%
+        width: 20%
     }
 
     #box-cards{
@@ -147,6 +156,21 @@ import Cards from '../components/Cards.vue';
         flex-wrap: wrap;
         gap: 10px;
         padding: 20px 0;
+    }
+
+    button{
+        border:none;
+        padding: 8px 0;
+        color: white;
+        font-weight: 600;
+        cursor:pointer;
+    }
+
+    #btn-load{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 }
 </style>

@@ -39,6 +39,7 @@
         color: white;
         margin: 5px 0;
         font-weight:lighter;
+        font-size: 15px;
     }
 }
 

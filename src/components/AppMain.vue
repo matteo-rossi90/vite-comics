@@ -9,7 +9,7 @@ import Cards from '../components/Cards.vue';
         },
         data(){
             return{
-                listComics: [
+                listComics: [//elenco dei dati con cui popolare le cards
                 {
                     "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                     "price": "$19.99",
@@ -103,7 +103,9 @@ import Cards from '../components/Cards.vue';
             </div>
 
             <div id="box-cards">
-                <Cards/>
+                <!-- inserimento dinamico in DOM delle cards -->
+                <Cards v-for="(items, i) in listComics" :key="i"
+                :details="items"/> 
             </div>
             
         </div>
@@ -141,6 +143,7 @@ import Cards from '../components/Cards.vue';
 
     #box-cards{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
         padding: 20px 0;

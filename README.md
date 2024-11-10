@@ -1,5 +1,2 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Progetto finalizzato alla realizzazione di un possibile sito vetrina che vende comics e fumetti realizzato interamente in Vue.js e in Vite.
+Il progetto nasce dalla volontà di esercitarsi con l'utilizzo di Vue 3 e Vite di sfruttare le componenti messe a disposizione del framework per costruire le singole parti del layout che compone la pagina web.
